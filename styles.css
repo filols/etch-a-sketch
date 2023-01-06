@@ -1,0 +1,39 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /*???*/
+}
+
+button {
+  border: 1px solid black;
+  padding: 4px 7px;
+  background: none;
+}
+
+button:hover {
+  background: black;
+}
+
+.btn-wrapper {
+  display: flex;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(90deg, #355C7D, #6C5B7B, #C06C84);   
+  padding: 20px 0 20px 40px;
+  gap: 15px;
+}
+
