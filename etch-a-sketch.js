@@ -20,6 +20,7 @@ function createGrid(dimension){
     grid.appendChild(row);
   }
   
+  addMouseListener(grid);
   const body = document.querySelector('body');
   body.appendChild(grid);
 }
@@ -29,4 +30,17 @@ function resetGrid(){
   squares.forEach(square => square.style.backgroundColor = '#e6e3e3');
 }
 
+function addMouseListener(grid){
+  grid.addEventListener('mouseover', paintCanvas);
+}
+
+function paintCanvas(e){
+  e.stopPropagation();
+  e.target.style.backgroundColor = 'black';
+
+  console.log(e);
+}
+
+const resetBtn = document.querySelector('.reset')
+resetBtn.addEventListener('click', resetGrid);
 createGrid(100);
