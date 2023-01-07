@@ -27,7 +27,7 @@ function createGrid(dimension){
 
 function resetGrid(){
   const squares = Array.from(document.querySelectorAll('.square'));
-  squares.forEach(square => square.style.backgroundColor = '#e6e3e3');
+  squares.forEach(square => square.style.backgroundColor = '#f9f8f8');
 }
 
 function addResetButton(){

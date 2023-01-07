@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #e6e3e3;
+  background-color: #f9f8f8;
   padding: 0;
   margin: 0;
 }
@@ -17,9 +17,9 @@ body {
   margin: auto;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(90deg, #355C7D, #6C5B7B, #6cb2c0);
+  background: linear-gradient(90deg, #355b7d9e, #6c5b7b90, #6cb2c0ad);
   padding: 20px 0 20px 40px;
-  gap: 15px;
+  gap: 5px;
 }
 
 .header-container h1 {
@@ -63,7 +63,7 @@ body {
 }
 
 .square {
-  background-color: #e6e3e3;
+  background-color: #f9f8f8;
   display: flex;
   flex: 1;
 }
