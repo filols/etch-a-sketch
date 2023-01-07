@@ -19,7 +19,6 @@ function getGrid(){
 
 function resetGrid(){
   const squares = Array.from(document.querySelectorAll('.square'));
-  console.log(squares);
   squares.forEach(square => square.style.backgroundColor = '#e6e3e3');
 }
 
