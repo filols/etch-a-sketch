@@ -1,0 +1,1 @@
+JS implementation of Etch-a-sketch. Minimal CSS, emphasis on learning to alter DOM-tree.
