@@ -34,13 +34,18 @@ function addMouseListener(grid){
   grid.addEventListener('mouseover', paintCanvas);
 }
 
+function addResetButton(){
+  const resetBtn = document.querySelector('#reset')
+  resetBtn.addEventListener('click', resetGrid);
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'r' || e.key === 'R') resetGrid();
+  })
+}
+
 function paintCanvas(e){
   e.stopPropagation();
   e.target.style.backgroundColor = 'black';
-
-  console.log(e);
 }
 
-const resetBtn = document.querySelector('.reset')
-resetBtn.addEventListener('click', resetGrid);
+addResetButton();
 createGrid(100);
