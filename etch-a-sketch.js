@@ -11,7 +11,7 @@ function createGrid(dimension){
     const row = document.createElement('div');
     row.classList.add('row');
 
-    for (let j = 0; j < dimension; j++){
+    for (let j = 0; j < dimension*2; j++){
       const square = document.createElement('div');
       square.classList.add('square');
       row.appendChild(square);
@@ -20,7 +20,7 @@ function createGrid(dimension){
     grid.appendChild(row);
   }
   
-  addMouseListener(grid);
+  grid.addEventListener('mouseover', paintCanvas);
   const body = document.querySelector('body');
   body.appendChild(grid);
 }
@@ -28,10 +28,6 @@ function createGrid(dimension){
 function resetGrid(){
   const squares = Array.from(document.querySelectorAll('.square'));
   squares.forEach(square => square.style.backgroundColor = '#e6e3e3');
-}
-
-function addMouseListener(grid){
-  grid.addEventListener('mouseover', paintCanvas);
 }
 
 function addResetButton(){
