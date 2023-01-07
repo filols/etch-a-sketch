@@ -44,4 +44,4 @@ function paintCanvas(e){
 }
 
 addResetButton();
-createGrid(100);
+createGrid(40);

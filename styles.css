@@ -5,39 +5,39 @@
 }
 
 body {
-  background-color: #f9f8f8;
-  padding: 0;
-  margin: 0;
+  height: 440px;
+  width: 400px;
+  background-color: rgb(241, 241, 241);
+  padding: 100px 0 0 0;
+  margin: auto;
+}
+
+.container {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.885);
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
 }
 
 /* Header */
-.header-container {
-  height: 8vh;
-  display: flex;
-  margin: auto;
-  justify-content: flex-start;
-  align-items: center;
-  background: linear-gradient(90deg, #355b7d9e, #6c5b7b90, #6cb2c0ad);
-  padding: 20px 0 20px 40px;
-  gap: 5px;
-}
-
-.header-container h1 {
-  padding: 0;
+.container h1 {
+  padding: 4px 0 0 0;
   margin: 0;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); /*???*/
 }
 
-.header-container button {
+.container button {
+  color: white;
   font-size: 18px;
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 2px 7px;
   background: none;
 }
 
-.header-container button:hover {
+.container button:hover {
   outline-color: transparent;
   outline-style: solid;
   box-shadow: 1px 1px 1px 1px #e0330845;
@@ -45,7 +45,7 @@ body {
   filter: brightness(70%);
 }
 
-.header-container button:active {
+.container button:active {
   transform: translate(0, 0);
   transition: 0.24s;
 }
@@ -53,8 +53,8 @@ body {
 /* Grid */
 .grid {
   display: flex;
-  height: 92vh;
   flex-direction: column;
+  height: 100%;
 }
 
 .row {
