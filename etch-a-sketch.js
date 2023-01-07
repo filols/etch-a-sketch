@@ -17,6 +17,12 @@ function getGrid(){
   return grid;
 }
 
+function resetGrid(){
+  const squares = Array.from(document.querySelectorAll('.square'));
+  console.log(squares);
+  squares.forEach(square => square.style.backgroundColor = '#e6e3e3');
+}
+
 const grid = getGrid();
 const body = document.querySelector('body');
 body.appendChild(grid);
