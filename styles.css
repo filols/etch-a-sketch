@@ -6,10 +6,6 @@
 
 body {
   background-color: #e6e3e3;
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  max-height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -31,8 +27,7 @@ body {
   margin: 0;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  /*???*/
+  transform: translateX(-50%); /*???*/
 }
 
 .header-container button {
@@ -70,5 +65,9 @@ body {
 .square {
   background-color: #e6e3e3;
   display: flex;
-  flex: 1 1 auto;
+  flex: 1;
+}
+
+.square:hover {
+  background-color: black;
 }
